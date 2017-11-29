@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tweet Parra</title>
+    <!-- Bootstrap-->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+    <link src="{% static 'css/bootstrap.css.map' %}">
+    <link href="{% static 'css/custom/styles.css' %}" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container-fluid bg-azul1">
+      <nav class="navbar navbar-expand-lg container"><a class="navbar-brand titulo" href="index.html"> </a>Tweet<br>Parra
+        <a class="btn btn-navs mr-2 my-sm-2" type="submit" href="/">Iniciar sesión</a>
+      </nav>
+    </div>
+    <div class="container respuestas mt-5 py-4" style="width: 450px;">
+      <h4 style="text-align: center;"> Únete hoy a Tweet Parra</h4>
+      <form class="d-flex flex-column" style="text-align: center;"> 
+        <form-group>
+          <input class="form-control btn mt-3" placeholder="Nombre completo" style="width: 250px;">
+        </form-group>
+        <form-group>
+          <input class="form-control btn my-3" placeholder="Usuario" style="width: 250px;">
+        </form-group>
+        <form-group>
+          <input class="form-control btn my-3" placeholder="Celular" style="width: 250px;">
+        </form-group>
+        <form-group>
+          <input class="form-control btn my-3" placeholder="Correo electrónico" style="width: 250px;">
+        </form-group>
+        <form-group>
+          <input class="form-control btn my-3" placeholder="Contraseña" style="width: 250px;">
+        </form-group>
+        <form-group>
+          <input class="form-control btn my-3" placeholder="Confirmar contraseña" style="width: 250px;">
+        </form-group>
+        <form-group>
+          <button class="btn btn-primary bg-azul3" style="width: 250px; border-radius:5rem;"> Regístrate</button>
+        </form-group>
+      </form>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
+    <script src="{% static 'js/jquery-3.2.1.slim.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed-->
+    <script src="{% static 'js/bootstrap.js' %}">   </script>
+  </body>
+</html>

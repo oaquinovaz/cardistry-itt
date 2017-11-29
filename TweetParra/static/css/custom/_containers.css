@@ -1,0 +1,22 @@
+.comentarios {
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 0.3rem;
+  font-size: 1.2rem; }
+
+.respuestas {
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 0.3rem;
+  font-size: 1.2rem; }
+
+.sidenav {
+  height: auto;
+  width: 400px;
+  top: 60;
+  left: 0;
+  overflow-x: auto;
+  padding-top: 20px; }
+
+.main {
+  width: 100%; }

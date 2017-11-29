@@ -1,0 +1,21 @@
+/*
+inset
+dashed
+double
+groove
+hidden
+dotted
+none
+outset
+ridge
+solid
+inherit
+
+#hist{
+    border-style: solid;    
+    border-width: 3zzzpx;
+
+    //Shorthand
+    border: solid red 3px;
+}
+*/

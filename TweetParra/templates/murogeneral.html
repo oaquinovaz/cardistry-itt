@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tweet Parra</title>
+    <!-- Bootstrap-->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+    <link src="{% static 'css/bootstrap.css.map' %}">
+    <link href="{% static 'css/custom/styles.css' %}" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container-fluid bg-azul1">
+      <nav class="navbar navbar-expand-lg container"><a class="navbar-brand titulo" href="index.html"> </a>Tweet<br>Parra
+        <a class="btn btn-navs mr-2 my-sm-2" type="submit" href="/murogeneral/">Inicio</a>
+        <a class="btn btn-navs mr-2 my-sm-2" type="submit" href="/perfil/">Perfil</a>
+        <a class="btn mr-2 my-sm-2 ml-auto" type="submit" href="/">Cerrar sesión</a>
+      </nav>
+    </div>
+    <div class="container-fluid">
+      <div class="row justify-content-center pt-4">
+        <div class="col-2 mr-3 muro-side" style="height: 100%;">
+          <div class="container-fluid d-flex align-items-center justify-content-center pt-3 pb-3"><img id="usuario_imagen" src="{% static 'img/aquino.jpg' %}" width="100" height="100" style="border-radius: 10rem;">
+            <h5 class="ml-3" id="usuario_nombre">Omar Aquino Vazquez       </h5>
+          </div>
+          <h4 style="text-align: center;">OmarA23</h4>
+        </div>
+        <div class="col-7 ml-3 muro-inicio">
+          <div class="container-fluid py-3 my-3">
+            <form-inline class="d-flex justify-content-center">
+              <textarea class="form-control mr-3" id="publicar_comentario" rows="1" style="resize: none;" placeholder="¿Qué quieres expresar?"></textarea>
+              <button class="btn" id="boton_publicar" type="submit">Publicar</button>
+            </form-inline>
+          </div>
+          <div class="comentarios py-4">
+            <div class="my-3">
+              <div class="container py-2">
+                <div class="d-flex justify-content-between">
+                  <h5>Gabriel Montiel (Gave192)</h5>
+                  <h6>20/11/2017</h6>
+                </div>
+                <p>Precausion con la lluvia</p>
+              </div>
+              <div class="container py-2 respuestas my-2">
+                <div class="d-flex justify-content-between">
+                  <h5>LupeMoran (Lupe.M23)</h5>
+                  <h6>21/11/2017</h6>
+                </div>
+                <p>Gracias!!</p>
+              </div>
+              <div class="container">
+                <form-inline class="d-flex justify-content-center">
+                  <textarea class="form-control responder" id="publicar_comentario" rows="1" style="resize: none;" placeholder="Responder">             </textarea>
+                  <button class="boton_publicar btn btn-publicar" type="submit">Responder</button>
+                </form-inline>
+              </div>
+            </div>
+          </div>
+          <div class="my-3">
+            <div class="comentarios py-4">
+              <div class="container py-2">
+                <div class="d-flex justify-content-between">
+                  <h5>Gabriel Montiel (Gave192)</h5>
+                  <h6>20/11/2017</h6>
+                </div>
+                <p>Precausion con la lluvia</p>
+              </div>
+              <div class="container py-2 respuestas my-2">
+                <div class="d-flex justify-content-between">
+                  <h5>LupeMoran (Lupe.M23)</h5>
+                  <h6>21/11/2017</h6>
+                </div>
+                <p>Gracias!!</p>
+              </div>
+              <div class="container">
+                <form-inline class="d-flex justify-content-center">
+                  <textarea class="form-control responder" id="publicar_comentario" rows="1" style="resize: none;" placeholder="Responder">             </textarea>
+                  <button class="boton_publicar btn btn-publicar" type="submit">Responder</button>
+                </form-inline>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
+    <script src="{% static 'js/jquery-3.2.1.slim.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed-->
+    <script src="{% static 'js/bootstrap.js' %}">   </script>
+  </body>
+</html>
